@@ -8,8 +8,8 @@
                <img src="{{ asset('img') }}/comingsoon.png" alt="">
             </div> --}}
             <div class="tp-error-text-box text-center">
-               <h4 class="error-title-sm">Coming Soon!</h4>
-               <p>Kami sedang mempersiapkan diri untuk membawa kepada Anda layanan yang inovatif dan bermanfaat. Kami bekerja keras di balik layar untuk memastikan pengalaman yang luar biasa bagi pelanggan kami.</p>
+               <h4 class="error-title-sm">Data berhasil dikirim</h4>
+               <p>Terimakasih atas minat Anda untuk bergabung dengan Tim kami. Kami ingin memberitahukan bahwa kami telah menerima dokumen yang Anda kirimkan. Tim kami akan meninjau setiap aplikasi dengan cermat untuk menemukan kandidat terbaik yang sesuai dengan kebutuhan kami.</p>
                <a class="tp-btn-green" href="/">
                   <span>Kembali keberanda</span>
                   <b></b>

@@ -46,9 +46,9 @@
    <!-- back-to-top-end  -->
 
     @include('layouts.header')
-    <div id="swup">
+    <main id="swup" class="fix">
         @yield('content')
-    </div>
+    </main>
     @include('layouts.footer')
 
    <!-- JS here -->

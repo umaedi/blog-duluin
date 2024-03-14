@@ -70,6 +70,7 @@ Route::prefix('karir')->group(function () {
 		Route::get('/detail/{id}/{slug}', 'detail');
 		Route::get('/apply/{id}/{slug}', 'apply');
 		Route::post('/apply/{id}/{slug}', 'store');
+		Route::get('/notifikasi/{id}/{slug}', 'notifikasi');
 	});
 });
 

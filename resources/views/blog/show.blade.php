@@ -39,6 +39,10 @@
                             </div>
                          </div>
                       </div>
+                      <!-- Posisi html coment -->
+                     <div id="disqus_thread"></div>
+                     <!-- Posisi html jumlah coment -->
+                     {{-- <script id="dsq-count-scr" src="//duluin-com.disqus.com/count.js" async></script> --}}
                    </article>
                 </div>
              </div>
@@ -141,114 +145,26 @@
        </div>
     </div>
     <!-- postbox area end -->
-    
-    <!--Portfolio Start-->
-    <div class="blog-grid-inner grey-bg pb-50">
-       <div class="container">
-          <div class="row">
-             <div class="col-12">
-                <div class="popular-blog-title mb-40 text-center">
-                   <h4>Related Posts</h4>
-                </div>
-             </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-                <div class="tp-testimonial-2-section">
-                    <div class="tp-testimonial-2-slider-active row">
-                        <div class="col-md-4">
-                           <div class="tp-blog-item">
-                              <div class="tp-blog-thumb fix">
-                                 <a href="#"><img src="{{ asset('img') }}/blog/blog-grid-1.jpg" alt=""></a>
-                              </div>
-                              <div class="tp-blog-content">
-                                 <div class="tp-blog-meta d-flex align-items-center">
-                                    <div class="tp-blog-category category-color-1">
-                                       <span>Crm Software</span>
-                                    </div>
-                                    <div class="tp-blog-date">
-                                       <span>28 April, 2023</span>
-                                    </div>
-                                 </div>
-                                 <div class="tp-blog-title-box">
-                                    <a class="tp-blog-title-sm" href="#">2023 Professional Year <br> In Review</a>
-                                 </div>
-                                 <div class="tp-blog-author-info-box d-flex align-items-center">
-                                    <div class="tp-blog-avata">
-                                       <img src="{{ asset('img') }}/blog/blog-avata-1.png" alt="">
-                                    </div>
-                                    <div class="tp-blog-author-info">
-                                       <h5>Hilary Ouse</h5>
-                                       <span>Founder & CEO Dulalix</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                    <div class="col-md-4">
-                     <div class="tp-blog-item">
-                        <div class="tp-blog-thumb fix">
-                           <a href="#"><img src="{{ asset('img') }}/blog/blog-grid-2.jpg" alt=""></a>
-                        </div>
-                        <div class="tp-blog-content">
-                           <div class="tp-blog-meta d-flex align-items-center">
-                              <div class="tp-blog-category category-color-1">
-                                 <span>Crm Software</span>
-                              </div>
-                              <div class="tp-blog-date">
-                                 <span>28 April, 2023</span>
-                              </div>
-                           </div>
-                           <div class="tp-blog-title-box">
-                              <a class="tp-blog-title-sm" href="#">Leveraging Feedback on <br> Insights best.</a>
-                           </div>
-                           <div class="tp-blog-author-info-box d-flex align-items-center">
-                              <div class="tp-blog-avata">
-                                 <img src="{{ asset('img') }}/blog/blog-avata-2.png" alt="">
-                              </div>
-                              <div class="tp-blog-author-info">
-                                 <h5>Hilary Ouse</h5>
-                                 <span>Founder & CEO Dulalix</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                    </div>
-                    <div class="col-md-4">
-                     <div class="tp-blog-item">
-                        <div class="tp-blog-thumb fix">
-                           <a href="#"><img src="{{ asset('img') }}/blog/blog-grid-3.jpg" alt=""></a>
-                        </div>
-                        <div class="tp-blog-content">
-                           <div class="tp-blog-meta d-flex align-items-center">
-                              <div class="tp-blog-category category-color-1">
-                                 <span>Crm Software</span>
-                              </div>
-                              <div class="tp-blog-date">
-                                 <span>28 April, 2023</span>
-                              </div>
-                           </div>
-                           <div class="tp-blog-title-box">
-                              <a class="tp-blog-title-sm" href="#">Project Management at <br> Your fingertips.</a>
-                           </div>
-                           <div class="tp-blog-author-info-box d-flex align-items-center">
-                              <div class="tp-blog-avata">
-                                 <img src="{{ asset('img') }}/blog/blog-avata-3.png" alt="">
-                              </div>
-                              <div class="tp-blog-author-info">
-                                 <h5>Hilary Ouse</h5>
-                                 <span>Founder & CEO Dulalix</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       </div>
-    </div>
-    <!--Portfolio End-->
     </main>
 @endsection
+@push('js')
+<script>
+   /**
+   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+   *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+   /*
+   var disqus_config = function () {
+   this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+   this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+   };
+   */
+   (function() { // DON'T EDIT BELOW THIS LINE
+   var d = document, s = d.createElement('script');
+   s.src = 'https://duluin-com.disqus.com/embed.js';
+   s.setAttribute('data-timestamp', +new Date());
+   (d.head || d.body).appendChild(s);
+   })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+@endpush
+

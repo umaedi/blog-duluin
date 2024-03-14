@@ -61,10 +61,19 @@ class Blog extends Controller
 
 		$data['articles']   = $articles;
 
+		$breadcrumd = [
+			'title' => 'Duluin - Blog',
+			'descTitle' => 'Bergabung dan tumbuh bersama ' . env('APP_NAME'),
+			'breadcrumb' => [
+				['url' => '/', 'name' => 'Beranda'],
+			],
+			'bread_current'	=> 'Blog'
+		];
+
 		$sidebar	= Blog::getSidebar();
 		$meta		= Blog::meta();
 		$data		= array_merge($sidebar, $data);
-		$data		= array_merge($meta, $data);
+		$data		= array_merge($meta, $data, $breadcrumd);
 
 		// dd($data['articles']);
 		return view('blog.index', compact('data'));
@@ -92,11 +101,19 @@ class Blog extends Controller
 
 		$data['post']   = $article;
 
+		$breadcrumd = [
+			'title' => 'Duluin - Read Blog',
+			'descTitle' => 'Bergabung dan tumbuh bersama ' . env('APP_NAME'),
+			'breadcrumb' => [
+				['url' => '/', 'name' => 'Beranda'],
+			],
+			'bread_current'	=> 'Read Blog'
+		];
 
 		$sidebar	= Blog::getSidebar();
 		$meta		= Blog::meta();
 		$data		= array_merge($sidebar, $data);
-		$data		= array_merge($meta, $data);
+		$data		= array_merge($meta, $data, $breadcrumd);
 
 		// dd($data['post']);
 		return view('blog.show', compact('data'));

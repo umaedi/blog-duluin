@@ -9,11 +9,13 @@
        <div class="row">
           <div class="col-xl-9 col-lg-7">
              <div class="breadcrumb__content">
-                <h3 class="breadcrumb__title tp-char-animation">Blog Duluin</h3>
+                <h3 class="breadcrumb__title tp-char-animation">{{ $data['title'] }}</h3>
                 <div class="breadcrumb__list wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".4s">
-                   <span class="child-one"><a href="/">Beranda</a></span>
-                   <span class="dvdr"><i class="fal fa-angle-right"></i></span>
-                   <span>Blog</span>
+                  @foreach ( $data['breadcrumb'] as $item)
+                  <span class="child-one"><a href="{{ $item['url'] }}">{{ $item['name'] }}</a></span>
+                  <span class="dvdr"><i class="fal fa-angle-right"></i></span>
+                  @endforeach
+                  <span>{{ $data['bread_current'] }}</span>
                 </div>
              </div>
           </div>

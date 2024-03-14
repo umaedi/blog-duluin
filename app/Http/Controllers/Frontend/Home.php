@@ -46,11 +46,18 @@ class Home extends Controller
 	}
 	public function about()
 	{
-		$data['title']  = 'Tentang Kami';
 
 		// $meta	= self::meta();
 		// $data	= array_merge($meta, $data);
 
+		$data = [
+			'title' => 'Tentang Duluin',
+			'descTitle' => 'Tentang ' . env('APP_NAME'),
+			'breadcrumb' => [
+				['url' => '/', 'name' => 'Beranda'],
+			],
+			'bread_current'	=> 'Tentang Duluin'
+		];
 		return view('pages.about.index', compact('data'));
 	}
 	public function sejarah()

@@ -83,20 +83,6 @@
                       </div>
                    </div>
                 </div>
-                {{-- <div class="col-xl-3 col-lg-3 col-md-6 pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-                   <div class="tp-footer__widget footer-widget-2 footer-col-2-4">
-                      <h4 class="tp-footer__widget-title">Download App</h4>
-                      <div class="tp-footer__download-box d-flex align-items-center">
-                         <div class="tp-footer__qrcode mr-15">
-                           <a href="#"> <img src="{{ asset('img') }}/footer/dwnld-1.png" alt=""></a>
-                         </div>
-                         <div class="tp-footer__app">
-                            <a href="#"><img class="mb-15" src="{{ asset('img') }}/footer/dwnld-2.png" alt=""></a>
-                           <a href="#"><img src="{{ asset('img') }}/footer/dwnld-3.png" alt=""></a>
-                         </div>
-                      </div>
-                   </div>
-                </div> --}}
              </div>
           </div>
        </div>
@@ -107,6 +93,7 @@
                    <div class="tp-copyright__social">
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
                       <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-tiktok"></i></a>
                       <a href="https://www.instagram.com/duluin.id/"><i class="fab fa-instagram"></i></a>
                    </div>
                 </div>
